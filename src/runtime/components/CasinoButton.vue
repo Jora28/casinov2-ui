@@ -1,7 +1,7 @@
 <template>
-    <div class="deposit-button">
-        <slot />
-    </div>
+  <div class="deposit-button">
+    <slot />
+  </div>
 </template>
 
 <script setup>
@@ -19,7 +19,7 @@
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 3px 0 0 #0000001A inset, 0 6px 15px 0 #FFE60026;
-    @apply bg-primary active:bg-[#5d5cfd] w-full border-transparent border-[1px]
+    @apply bg-primary active:bg-[#5d5cfd] w-full border-transparent border
 }
 
 .deposit-button::after {
