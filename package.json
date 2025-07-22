@@ -37,6 +37,9 @@
     "@nuxt/kit": "^3.17.7",
     "defu": "^6.1.4"
   },
+  "peerDependencies": {
+    "@nuxtjs/tailwindcss": "^7.0.0"
+  },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
     "@nuxt/eslint-config": "^1.5.2",
