@@ -1,7 +1,6 @@
 import { defineNuxtModule, addComponentsDir, addPlugin, createResolver, installModule } from '@nuxt/kit'
-import { _ } from 'vitest/dist/chunks/reporters.d.BFLkQcL6.js'
 import { defu } from 'defu'
-import defaultTailwindConfig from '../tailwind.config.js'
+import defaultTailwindConfig from './defaults/tailwind'
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   tailwindConfig?: any

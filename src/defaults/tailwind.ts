@@ -1,12 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+// src/defaults/tailwind.ts
+import type { TailwindConfig } from 'tailwindcss/tailwind-config'
 
-  // safelist:[
-  //     'router-link-exact-active',
-  //   {
-  //     pattern:  /([a-zA-Z]+)-./,
-  //   }
-  //     ],
+const defaultTailwindConfig: Partial<TailwindConfig> = {
   theme: {
 
     screens: {
@@ -174,8 +169,7 @@ module.exports = {
       },
     },
   },
-  // plugins: [
-  //   // require('@tailwindcss/forms'),
-  //   // require('@tailwindcss/aspect-ratio'),
-  // ],
+  // add your default config here
 }
+
+export default defaultTailwindConfig
