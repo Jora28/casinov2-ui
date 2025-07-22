@@ -11,16 +11,16 @@
       "import": "./src/module.mjs"
     }
   },
-  "main": "./dist/module.mjs",
+  "main": "./src/module.mjs",
   "typesVersions": {
     "*": {
       ".": [
-        "./dist/types.d.mts"
+        "./src/types.d.mts"
       ]
     }
   },
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
