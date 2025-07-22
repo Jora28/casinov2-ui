@@ -7,8 +7,8 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types.d.mts",
-      "import": "./dist/module.mjs"
+      "types": "./src/types.d.mts",
+      "import": "./src/module.mjs"
     }
   },
   "main": "./dist/module.mjs",
