@@ -8,10 +8,10 @@
   "exports": {
     ".": {
       "types": "./src/types.d.mts",
-      "import": "./src/module.mjs"
+      "import": "./src/module.ts"
     }
   },
-  "main": "./src/module.mjs",
+  "main": "./src/module.ts",
   "typesVersions": {
     "*": {
       ".": [
