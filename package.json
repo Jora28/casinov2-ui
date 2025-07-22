@@ -38,7 +38,7 @@
     "defu": "^6.1.4"
   },
   "peerDependencies": {
-    "@nuxtjs/tailwindcss": "^7.0.0"
+    "@nuxtjs/tailwindcss": "^6.14.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
