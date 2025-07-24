@@ -1,7 +1,12 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  devtools: { enabled: true },
+  modules: [
+    '@nuxt/ui',
+    '../src/module',
+  ],
   imports: {
-    dirs: ["stores"],
+    dirs: ['stores'],
   },
+  css: ['@/assets/style.css'],
+  devtools: { enabled: true },
+
 })
