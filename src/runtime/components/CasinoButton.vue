@@ -19,7 +19,7 @@
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 3px 0 0 #0000001A inset, 0 6px 15px 0 #FFE60026;
-    /* @apply bg-primary active:bg-[#5d5cfd] w-full border-transparent border */
+    @apply bg-primary active:bg-[#5d5cfd] w-full border-transparent text-center border
 }
 
 .deposit-button::after {
@@ -36,7 +36,7 @@
     opacity: 0.2;
     border-radius: 10px;
     pointer-events: none;
-    /* @apply bg-gradient-to-t from-primary from-50% to-50% to-white; */
+    @apply bg-gradient-to-t from-primary from-50% to-50% to-white;
 }
 
 .deposit-button:disabled {
@@ -58,7 +58,7 @@
         padding: 8px 25px;
     }
 
-    /* .deposit-button::after {
+    .deposit-button::after {
        top: 50%;
        transform: translateY(-50%);
     }
@@ -66,6 +66,6 @@
     .deposit-button:disabled::after {
        top: 50%;
        transform: translateY(-50%);
-    } */
+    }
 }
 </style>
