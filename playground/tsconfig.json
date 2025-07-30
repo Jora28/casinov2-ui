@@ -1,3 +1,18 @@
 {
-  "extends": "./.nuxt/tsconfig.json"
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["../src/*"],
+      "~/*": ["../*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["./stories", "./.storybook"]
 }

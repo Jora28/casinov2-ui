@@ -1,11 +1,16 @@
 <template>
-  <div class="deposit-button">
-    <slot />
-  </div>
+    <div class="deposit-button">
+        <span>{{ text }}</span>
+    </div>
 </template>
 
 <script setup>
-
+const props = defineProps({
+    text: {
+        type: String,
+        default: true
+    }
+})
 </script>
 
 <style scoped>
@@ -59,13 +64,13 @@
     }
 
     .deposit-button::after {
-       top: 50%;
-       transform: translateY(-50%);
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .deposit-button:disabled::after {
-       top: 50%;
-       transform: translateY(-50%);
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 </style>

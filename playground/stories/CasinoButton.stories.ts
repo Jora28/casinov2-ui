@@ -1,17 +1,23 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
-import CasinoButton from "../../src/runtime/components/CasinoButton.vue";
 
-const meta = {
-  title: 'CasinoButton',
+import CasinoButton from '../../src/runtime/components/CasinoButton.vue';
+import '../../src/output.css';
+export const ActionsData = {
+  // onPinTask: fn(),
+  // onArchiveTask: fn(),
+};
+
+export default {
   component: CasinoButton,
-  // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
-//   tags: ['autodocs'],
+  title: 'CasinoButton',
+  tags: ['autodocs'],
+  excludeStories: /.*Data$/,
+  args: {
+    ...ActionsData
+  }
+};
 
-} satisfies Meta<typeof CasinoButton>
-
-export default meta
-type Story = StoryObj<typeof meta>
-
-export const NuxtWelcomeStory: Story = {
-  args: {},
-}
+export const Default = {
+  args: {
+    text: 'Deposit Now',
+  },
+};

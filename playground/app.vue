@@ -28,9 +28,7 @@
             Preview
           </h2>
           <div class="w-[200px]">
-            <CasinoButton>
-              Deposit Now
-            </CasinoButton>
+            <CasinoButton :text="'Deposit Now'" />
           </div>
         </div>
       </div>
@@ -39,6 +37,7 @@
 </template>
 
 <script setup>
+import { text } from 'stream/consumers'
 import Sidebar from '~/components/Sidebar.vue'
 
 const allComponents = ref([])

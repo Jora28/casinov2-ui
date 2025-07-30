@@ -1,3 +1,4 @@
+import tailwinConfig from './tailwind.config'
 export default defineNuxtConfig({
   modules: [
     '../src/module',
@@ -5,6 +6,9 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ['stores'],
+  },
+  casinov2Ui: {
+    tailwindConfig: tailwinConfig
   },
   devtools: { enabled: true },
 
